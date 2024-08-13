@@ -70,7 +70,7 @@ window_behavior:
       shown_on_top: false
 
 workspaces:
-  - name: '1'
+  - name: 'MAIN'
   - name: '2'
   - name: '3'
   - name: '4'
@@ -78,6 +78,7 @@ workspaces:
   - name: '6'
   - name: '7'
   - name: '8'
+  - name: '9'
   - name: 'BG'
 
 window_rules:
@@ -219,7 +220,7 @@ keybindings:
     bindings: ['alt+d']
 
   # Change focus to a workspace defined in `workspaces` config.
-  - commands: ['focus --workspace 1']
+  - commands: ['focus --workspace MAIN']
     bindings: ['alt+1']
   - commands: ['focus --workspace 2']
     bindings: ['alt+2']
@@ -237,6 +238,8 @@ keybindings:
     bindings: ['alt+8']
   - commands: ['focus --workspace 9']
     bindings: ['alt+9']
+  - commands: ['focus --workspace BG']
+    bindings: ['alt+0']
 
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
@@ -250,8 +253,8 @@ keybindings:
     bindings: ['alt+lctrl+s']
 
   # Move focused window to a workspace defined in `workspaces` config.
-  - commands: ['move --workspace 1', 'focus --workspace 1']
-    bindings: ['alt+lctrl+1']
+  - commands: ['move --workspace MAIN', 'focus --workspace MAIN']
+    bindings: ['alt+lctrl+m']
   - commands: ['move --workspace 2', 'focus --workspace 2']
     bindings: ['alt+lctrl+2']
   - commands: ['move --workspace 3', 'focus --workspace 3']
@@ -268,3 +271,5 @@ keybindings:
     bindings: ['alt+lctrl+8']
   - commands: ['move --workspace 9', 'focus --workspace 9']
     bindings: ['alt+lctrl+9']
+  - commands: ['move --workspace BG', 'focus --workspace BG']
+    bindings: ['alt+lctrl+b']
