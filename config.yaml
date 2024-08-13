@@ -118,7 +118,7 @@ binding_modes:
   - name: 'pause'
     keybindings:
       - commands: ['wm-disable-binding-mode --name pause']
-        bindings: ['alt+shift+p']
+        bindings: ['alt+lctrl+p']
 
 keybindings:
   # Shift focus in a given direction.
@@ -143,13 +143,13 @@ keybindings:
 
   # Resize focused window by a percentage or pixel amount.
   - commands: ['resize --width -2%']
-    bindings: ['alt+u']
+    bindings: ['lctrl+u']
   - commands: ['resize --width +2%']
-    bindings: ['alt+p']
+    bindings: ['lctrl+p']
   - commands: ['resize --height +2%']
-    bindings: ['alt+o']
+    bindings: ['lctrl+o']
   - commands: ['resize --height -2%']
-    bindings: ['alt+i']
+    bindings: ['lctrl+i']
 
   # As an alternative to the resize keybindings above, resize mode enables
   # resizing via arrow keys or HJKL. The binding mode is defined above with
@@ -159,7 +159,7 @@ keybindings:
 
   # Disables all keybindings until alt+shift+p is pressed again.
   - commands: ['wm-enable-binding-mode --name pause']
-    bindings: ['alt+shift+p']
+    bindings: ['alt+lctrl+p']
 
   # Change tiling direction. This determines where new tiling windows will
   # be inserted.
@@ -168,11 +168,11 @@ keybindings:
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ['wm-cycle-focus']
-    bindings: ['alt+space']
+    bindings: ['shift+space']
 
   # Change the focused window to be floating.
   - commands: ['toggle-floating --centered']
-    bindings: ['alt+shift+space']
+    bindings: ['alt+lctrl+space']
 
   # Change the focused window to be tiling.
   - commands: ['toggle-tiling']
@@ -188,19 +188,19 @@ keybindings:
 
   # Close focused window.
   - commands: ['close']
-    bindings: ['alt+shift+q']
+    bindings: ['alt+lctrl+q']
 
   # Kill GlazeWM process safely.
   - commands: ['wm-exit']
-    bindings: ['alt+shift+e']
+    bindings: ['alt+lctrl+e']
 
   # Re-evaluate configuration file.
   - commands: ['wm-reload-config']
-    bindings: ['alt+shift+r']
+    bindings: ['alt+lctrl+r']
 
   # Redraw all windows.
   - commands: ['wm-redraw']
-    bindings: ['alt+shift+w']
+    bindings: ['alt+lctrl+w']
 
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
@@ -241,30 +241,30 @@ keybindings:
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
   - commands: ['move-workspace --direction left']
-    bindings: ['alt+shift+a']
+    bindings: ['alt+lctrl+a']
   - commands: ['move-workspace --direction right']
-    bindings: ['alt+shift+f']
+    bindings: ['alt+lctrl+f']
   - commands: ['move-workspace --direction up']
-    bindings: ['alt+shift+d']
+    bindings: ['alt+lctrl+d']
   - commands: ['move-workspace --direction down']
-    bindings: ['alt+shift+s']
+    bindings: ['alt+lctrl+s']
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ['move --workspace 1', 'focus --workspace 1']
-    bindings: ['alt+shift+1']
+    bindings: ['alt+lctrl+1']
   - commands: ['move --workspace 2', 'focus --workspace 2']
-    bindings: ['alt+shift+2']
+    bindings: ['alt+lctrl+2']
   - commands: ['move --workspace 3', 'focus --workspace 3']
-    bindings: ['alt+shift+3']
+    bindings: ['alt+lctrl+3']
   - commands: ['move --workspace 4', 'focus --workspace 4']
-    bindings: ['alt+shift+4']
+    bindings: ['alt+lctrl+4']
   - commands: ['move --workspace 5', 'focus --workspace 5']
-    bindings: ['alt+shift+5']
+    bindings: ['alt+lctrl+5']
   - commands: ['move --workspace 6', 'focus --workspace 6']
-    bindings: ['alt+shift+6']
+    bindings: ['alt+lctrl+6']
   - commands: ['move --workspace 7', 'focus --workspace 7']
-    bindings: ['alt+shift+7']
+    bindings: ['alt+lctrl+7']
   - commands: ['move --workspace 8', 'focus --workspace 8']
-    bindings: ['alt+shift+8']
+    bindings: ['alt+lctrl+8']
   - commands: ['move --workspace 9', 'focus --workspace 9']
-    bindings: ['alt+shift+9']
+    bindings: ['alt+lctrl+9']
