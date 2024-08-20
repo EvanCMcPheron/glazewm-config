@@ -86,9 +86,9 @@ workspaces:
   - name: 'BG'
 
 window_rules:
-  - commands: ['set-tiling']
-    match:
-      - window_process: { regex: '[Nn]eovide'}
+  # - commands: ['set-tiling']
+  #   match:
+  #     - window_process: { regex: '[Nn]eovide'}
 
   - commands: ['ignore']
     match:
