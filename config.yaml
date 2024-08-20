@@ -1,7 +1,10 @@
 general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
-  startup_commands: ['shell-exec %userprofile%/.glzr/zebar/start.bat']
+  startup_commands: [
+    'shell-exec %userprofile%/.glzr/zebar/start.bat',
+    'shell-exec C:\Projects\rust_projects\DONT_REMOVE\GAT-GWM\target\release\gat-gwm.exe'
+  ]
 
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: true
@@ -83,6 +86,10 @@ workspaces:
   - name: 'BG'
 
 window_rules:
+  - commands: ['set-tiling']
+    match:
+      - window_process: { regex: '[Nn]eovide'}
+
   - commands: ['ignore']
     match:
       # Ignores any Zebar windows.
@@ -144,14 +151,14 @@ keybindings:
     bindings: ['alt+lctrl+j', 'alt+lctrl+down']
 
   # Resize focused window by a percentage or pixel amount.
-  - commands: ['resize --width -2%']
-    bindings: ['lctrl+u']
-  - commands: ['resize --width +2%']
-    bindings: ['lctrl+p']
-  - commands: ['resize --height +2%']
-    bindings: ['lctrl+o']
-  - commands: ['resize --height -2%']
-    bindings: ['lctrl+i']
+  # - commands: ['resize --width -2%']
+  #   bindings: ['lctrl+u']
+  # - commands: ['resize --width +2%']
+  #   bindings: ['lctrl+p']
+  # - commands: ['resize --height +2%']
+  #   bindings: ['lctrl+o']
+  # - commands: ['resize --height -2%']
+  #   bindings: ['lctrl+i']
 
   # As an alternative to the resize keybindings above, resize mode enables
   # resizing via arrow keys or HJKL. The binding mode is defined above with
@@ -276,7 +283,7 @@ keybindings:
     bindings: ['alt+lctrl+9']
   - commands: ['move --workspace 9', 'focus --workspace 9']
     bindings: ['alt+lctrl+9']
-  - commands: ['move --workspace 0', 'focus --workspace 10']
+  - commands: ['move --workspace 10', 'focus --workspace 10']
     bindings: ['alt+lctrl+0']
   - commands: ['move --workspace BG', 'focus --workspace BG']
     bindings: ['alt+lctrl+b']

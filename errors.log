@@ -6,3 +6,13 @@
 [2m2024-08-13T21:21:31.123509Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2024-08-19T04:30:45.774309Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '0' doesn't exist or is already active.
 [2m2024-08-19T04:30:54.992229Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '0' doesn't exist or is already active.
+[2m2024-08-19T20:07:09.569297Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '0' doesn't exist or is already active.
+[2m2024-08-20T00:34:30.196405Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '0' doesn't exist or is already active.
+[2m2024-08-20T00:34:32.469759Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '0' doesn't exist or is already active.
+[2m2024-08-20T00:34:34.672567Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '0' doesn't exist or is already active.
+[2m2024-08-20T00:40:44.164613Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-08-20T00:51:06.451910Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 86 column 5
+[2m2024-08-20T00:51:33.025885Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 86 column 5
+[2m2024-08-20T00:57:26.852721Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-08-20T01:06:26.623321Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unrecognized subcommand
+ at line 4 column 21
