@@ -2,8 +2,8 @@ general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
   startup_commands: [
-    'shell-exec %userprofile%/.glzr/zebar/start.bat',
-    'shell-exec C:\Projects\rust_projects\DONT_REMOVE\GAT-GWM\target\release\gat-gwm.exe'
+    'shell-exec zebar',
+    # 'shell-exec C:\Projects\rust_projects\DONT_REMOVE\GAT-GWM\target\release\gat-gwm.exe'
   ]
 
   # Whether to automatically focus windows underneath the cursor.
@@ -31,7 +31,7 @@ gaps:
     top: '50px'
     right: '10px'
     bottom: '10px'
-    left:  10px'
+    left:  '10px'
 
 window_effects:
   # Visual effects to apply to the focused window.
