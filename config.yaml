@@ -222,6 +222,10 @@ keybindings:
     bindings: ['alt+s']
   - commands: ['focus --prev-active-workspace']
     bindings: ['alt+a']
+  - commands: ['focus --next-workspace']
+    bindings: ['alt+w']
+  - commands: ['focus --prev-workspace']
+    bindings: ['alt+q']
 
   # Focus the workspace that last had focus.
   - commands: ['focus --recent-workspace']
